@@ -52,7 +52,7 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
-  --primary-foreground: #FFF;
+  --primary-foreground: #fff;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
@@ -68,10 +68,10 @@
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: #FFF;
+  --sidebar: #fff;
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: #FFF;
+  --sidebar-primary-foreground: #fff;
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
@@ -79,20 +79,20 @@
 }
 
 .dark {
-  --background: #09051A;
-  --foreground: #FFF;
-  --card: #120F1F;
-  --card-foreground: #FFF;
+  --background: #09051a;
+  --foreground: #fff;
+  --card: #120f1f;
+  --card-foreground: #fff;
   --popover: oklch(0.205 0 0);
-  --popover-foreground: #FFF;
-  --primary: #5407BF;
-  --primary-foreground: #FFF;
-  --secondary: #A2A2A2;
-  --secondary-foreground: #FFF;
+  --popover-foreground: #fff;
+  --primary: #5407bf;
+  --primary-foreground: #fff;
+  --secondary: #a2a2a2;
+  --secondary-foreground: #fff;
   --muted: #414141;
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
-  --accent-foreground: #FFF;
+  --accent-foreground: #fff;
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
@@ -103,11 +103,11 @@
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: #FFF;
+  --sidebar-foreground: #fff;
   --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: #FFF;
+  --sidebar-primary-foreground: #fff;
   --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: #FFF;
+  --sidebar-accent-foreground: #fff;
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
@@ -119,4 +119,14 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer components {
+  .card {
+    @apply border-muted hover:border-primary hover:text-primary shadow-primary/20 flex size-12 items-center justify-center rounded-md border duration-300 hover:shadow-2xl;
+  }
+}
+
+.montserrat {
+  font-family: var(--font-montserrat);
 }

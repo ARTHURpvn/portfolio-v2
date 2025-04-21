@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Epilogue, Geist } from "next/font/google";
+import { Epilogue, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${epilogue.className} dark antialiased`}
+        className={`${montserrat.variable} ${epilogue.className} dark overflow-x-hidden antialiased`}
       >
         <Header />
         {children}
