@@ -11,34 +11,39 @@ const Projects = () => {
       name: "Apex Studio",
       date: "Fev 2025 - Mar 2025",
       title: "UI/UX Designer & Desenvolvedor FullStack",
-      desc: `Desenvolvimento Full-Stack e Integração de API: Desenvolvi um site completo para a APEX STUDIO, com uma página inicial que exibe os jogos da empresa e as notícias recentes. Integrei APIs RESTful para o gerenciamento dinâmico de conteúdo.
-            Sistema de Gerenciamento de Notícias: Implementei um editor avançado com TinyMCE para que administradores possam criar, editar e formatar notícias com imagens. Desenvolvi um painel administrativo com uma interface em tabela para gerenciar o conteúdo de forma eficiente.
-            Desempenho e Responsividade: Assegurei alta performance por meio de lazy loading, caching e otimização de imagens. Desenvolvi uma interface totalmente responsiva e acessível, seguindo as melhores práticas de mobile-first e ARIA.
-            Arquitetura Escalável e Segura: Utilizei PostgreSQL para um armazenamento de dados estruturado e escalável. Apliquei as melhores práticas de segurança para prevenir ataques XSS, CSRF e SQL Injection.`,
+      desc: `Landing page desenvolvida para apresentar o jogo Apex Point, um simulador de corrida com foco em realismo e personalização. 
+      O projeto destaca os diferenciais do game com um layout moderno, escuro e dinâmico, otimizando a navegação tanto para desktop quanto mobile.`,
     },
     {
       name: "DiacovMoney",
-      date: "Fev 2025 - Mar 2025",
-      title: "UI/UX Designer & Desenvolvedor FullStack",
-      desc: `Desenvolvimento Full-Stack e Integração de API: Desenvolvi um site completo para a APEX STUDIO, com uma página inicial que exibe os jogos da empresa e as notícias recentes. Integrei APIs RESTful para o gerenciamento dinâmico de conteúdo.
-            Sistema de Gerenciamento de Notícias: Implementei um editor avançado com TinyMCE para que administradores possam criar, editar e formatar notícias com imagens. Desenvolvi um painel administrativo com uma interface em tabela para gerenciar o conteúdo de forma eficiente.
-            Desempenho e Responsividade: Assegurei alta performance por meio de lazy loading, caching e otimização de imagens. Desenvolvi uma interface totalmente responsiva e acessível, seguindo as melhores práticas de mobile-first e ARIA.
-            Arquitetura Escalável e Segura: Utilizei PostgreSQL para um armazenamento de dados estruturado e escalável. Apliquei as melhores práticas de segurança para prevenir ataques XSS, CSRF e SQL Injection.`,
+      date: "Mar 2025 - Abr 2025",
+      title: "UI/UX Designer & Desenvolvedor FrontEnd",
+      desc: `Página de captura criada para promover a mentoria financeira do Diacov, focada em ensinar como faturar R$ 5.000 mensais com 
+      produtos digitais no nicho HOT. A estrutura foi desenhada para conversão: carregamento rápido, copy direta e botão de ação sempre visível.`,
+    },
+    {
+      name: "Finance IA",
+      date: "Nov 2024 - Nov 2024",
+      title: "Desenvolvedor FullStack",
+      desc: `Aplicação SaaS criada para ajudar usuários a gerenciarem suas finanças de forma automatizada. Com autenticação de usuários, 
+      dashboard intuitivo para registrar gastos e uma IA integrada para gerar relatórios personalizados da saúde financeira do usuário, 
+      a plataforma também conta com sistema de planos pagos para liberar o acesso à IA. O projeto proporcionou aos usuários uma visualização clara 
+      e estratégica de suas finanças.`,
     },
   ];
 
   return (
-    <section className="bg-card w-full p-30 px-15">
+    <section className="bg-card w-full p-20 px-4 md:p-30 md:px-15">
       <div className="mx-auto w-[90%]">
-        <h1 className="text-4xl font-bold">Projetos</h1>
+        <h1 className="text-3xl font-bold md:text-4xl">Projetos</h1>
 
-        <div className="mt-10 flex items-start gap-14">
-          <div className="bg-background w-120">
+        <div className="mt-10 flex flex-col items-start gap-6 md:flex-row md:gap-14">
+          <div className="bg-background w-full md:w-120">
             {projectsArray.map((project, index) => (
               <Button
                 key={index}
-                className={`border-background ${selectedProject === index && "border-primary"} h-16 w-full border-l-4 text-2xl font-semibold`}
-                variant={"ghost"}
+                className={`border-background ${selectedProject === index && "border-primary"} h-16 w-full border-l-4 text-xl font-semibold md:text-2xl`}
+                variant={"project"}
                 onClick={() => setSelectedProject(index)}
               >
                 {project.name}
@@ -46,19 +51,22 @@ const Projects = () => {
             ))}
           </div>
 
-          <div className="montserrat w-[95%] space-y-4">
-            <div className="flex justify-between">
-              <p className="text-xl font-semibold">{projectsArray[selectedProject].title}</p>
-              <p className="text-secondary">{projectsArray[selectedProject].date}</p>
+          <div className="montserrat w-full space-y-4 md:w-[95%]">
+            <div className="flex flex-col justify-between gap-2 md:flex-row">
+              <p className="text-lg font-semibold md:text-xl">
+                {projectsArray[selectedProject].title}
+              </p>
+              <p className="text-secondary text-sm md:text-base">
+                {projectsArray[selectedProject].date}
+              </p>
             </div>
 
-            <p className="text-primary text-lg font-semibold">
-              {" "}
+            <p className="text-primary text-base font-semibold md:text-lg">
               {projectsArray[selectedProject].name}
             </p>
-            <p>{projectsArray[selectedProject].desc}</p>
+            <p className="text-sm md:text-base">{projectsArray[selectedProject].desc}</p>
             <div className="flex justify-end">
-              <Button variant={"ghost"} className="text-primary mt-6">
+              <Button variant={"project"} className="text-primary mt-6">
                 Visualizar Projeto
               </Button>
             </div>

@@ -26,13 +26,13 @@ const Header = () => {
   }, []);
 
   return (
-    <div id="header" className="header fixed top-0 z-50 w-full transition-all duration-500">
+    <div id="header" className="fixed top-0 z-50 w-dull transition-all duration-500">
       <div className="flex items-center justify-between px-[6%] py-6">
-        <h1 className="text-2xl">ARTHURpvn</h1>
+        <h1 className="lg:text-2xl">ARTHURpvn</h1>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-2 max-md:ml-5 lg:gap-6">
           <ChangeLanguage />
-          <Button> Entrar em Contato </Button>
+          <Button className=""> Entrar em Contato </Button>
         </div>
       </div>
     </div>

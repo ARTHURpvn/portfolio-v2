@@ -107,18 +107,18 @@ const Knowledge = () => {
 
   return (
     <section className="bg-background w-full">
-      <div className="mx-auto w-[90%] p-30 px-15">
-        <h1 className="mb-16 text-4xl font-bold">Conhecimento</h1>
+      <div className="mx-auto w-[90%] p-20 px-4 md:p-30 md:px-15">
+        <h1 className="mb-8 text-3xl font-bold md:mb-16 md:text-4xl">Conhecimento</h1>
 
-        <div className="flex w-full justify-between">
-          <div className="grid w-[50%] grid-cols-8 gap-y-4">
+        <div className="flex w-full flex-col justify-between gap-6 md:flex-row">
+          <div className="grid w-full grid-cols-4 gap-4 md:w-[50%] md:grid-cols-8 md:gap-y-4">
             {knowledge.map((item, index) => {
               return (
                 <Button
                   key={index}
                   asChild
                   variant={"ghost"}
-                  className="size-18"
+                  className="size-16 md:size-18"
                   onClick={() => setSelected(index)}
                 >
                   <div
@@ -129,6 +129,7 @@ const Knowledge = () => {
                       width={100}
                       height={100}
                       alt={item.name}
+                      className="h-full w-full object-contain md:p-2"
                     />
                   </div>
                 </Button>
@@ -136,9 +137,11 @@ const Knowledge = () => {
             })}
           </div>
 
-          <div className="ml-10 flex w-[55%] flex-col items-start">
-            <h2 className="text-primary mb-6 text-2xl font-semibold">{knowledge[selected].name}</h2>
-            <p>{knowledge[selected].desc}</p>
+          <div className="flex w-full flex-col items-start md:ml-10 md:w-[55%]">
+            <h2 className="text-primary mb-4 text-xl font-semibold md:mb-6 md:text-2xl">
+              {knowledge[selected].name}
+            </h2>
+            <p className="text-sm md:text-base">{knowledge[selected].desc}</p>
           </div>
         </div>
       </div>

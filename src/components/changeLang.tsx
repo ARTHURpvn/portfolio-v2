@@ -11,9 +11,9 @@ import {
 const ChangeLanguage = () => {
   return (
     <div>
-      <Select>
-        <SelectTrigger>
-          <SelectValue placeholder="ex" />
+      <Select defaultValue="en">
+        <SelectTrigger className="rounded-full">
+          <SelectValue />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
@@ -21,7 +21,7 @@ const ChangeLanguage = () => {
             <SelectItem value="en">EN</SelectItem>
             <SelectItem value="es">SP</SelectItem>
             <SelectItem value="fr">FR</SelectItem>
-            <SelectItem value="de">PT-BR</SelectItem>
+            <SelectItem value="pt-br">PT-BR</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>

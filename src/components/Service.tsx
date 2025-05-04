@@ -14,13 +14,13 @@ interface ServiceProps {
 
 const Service = ({ name, price, desc, items }: ServiceProps) => {
   return (
-    <div className="bg-card w-120 space-y-4 p-8">
+    <div className="bg-card w-full space-y-4 p-6 md:w-120 md:p-8">
       <div className="space-y-2">
-        <h2 className="text-primary text-3xl font-bold">{name}</h2>
-        <h3 className="text-xl font-semibold">R$ {price},00</h3>
+        <h2 className="text-primary text-2xl md:text-3xl font-bold">{name}</h2>
+        <h3 className="text-lg md:text-xl font-semibold">R$ {price},00</h3>
       </div>
 
-      <p className="text-secondary">{desc}</p>
+      <p className="text-secondary text-sm md:text-base">{desc}</p>
 
       <div className="space-y-4">
         {items.map((item) => (
@@ -30,13 +30,13 @@ const Service = ({ name, price, desc, items }: ServiceProps) => {
             >
               {item.included ? <CheckIcon size={20} /> : <PlusIcon size={20} />}
             </div>
-            <p className="text-lg font-medium">{item.name}</p>
+            <p className="text-base md:text-lg font-medium">{item.name}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-20 flex items-center justify-end gap-2">
-        <p>Entre em Contato</p>
+      <div className="mt-10 md:mt-20 flex items-center justify-end gap-2">
+        <p className="text-sm md:text-base">Entre em Contato</p>
         <ArrowRightIcon size={20} />
       </div>
     </div>

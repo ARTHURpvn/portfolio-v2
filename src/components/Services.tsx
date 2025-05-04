@@ -91,9 +91,9 @@ const Services = () => {
   ];
   return (
     <section>
-      <div className="mx-auto w-[90%] px-15 py-40">
-        <h1 className="mb-16 text-4xl font-bold">Serviços</h1>
-        <div className="flex w-full items-start justify-between">
+      <div className="mx-auto w-[90%] px-4 py-20 md:px-15 md:py-40">
+        <h1 className="mb-8 md:mb-16 text-3xl md:text-4xl font-bold">Serviços</h1>
+        <div className="flex w-full flex-col items-start gap-6 md:flex-row md:justify-between">
           <Service
             name="Landing Page"
             price={800}
