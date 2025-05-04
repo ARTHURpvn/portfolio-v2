@@ -84,6 +84,7 @@ export function ContactForm() {
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className="mx-auto mt-10 w-full px-4 md:mt-20 md:px-6"
+        netlify
       >
         <div className="flex flex-col gap-6 md:flex-row md:gap-10">
           <FormField

@@ -13,7 +13,7 @@ const Header = () => {
         header.classList.remove("bg-transparent");
       } else {
         header.classList.add("bg-transparent");
-        header.classList.remove("bg-card/80", "backdrop-blur-sm", "shadow-sm");
+        header.classList.remove("bg-card/90", "backdrop-blur-sm", "shadow-sm");
       }
     };
 
@@ -26,13 +26,16 @@ const Header = () => {
   }, []);
 
   return (
-    <div id="header" className="fixed top-0 z-50 w-dull transition-all duration-500">
-      <div className="flex items-center justify-between px-[6%] py-6">
-        <h1 className="lg:text-2xl">ARTHURpvn</h1>
+    <div
+      id="header"
+      className="bg-card/90 fixed top-0 z-50 w-screen shadow-sm backdrop-blur-sm transition-all duration-500"
+    >
+      <div className="flex items-center justify-around py-4 md:py-6">
+        <h1 className="text-xl md:text-2xl">ARTHURpvn</h1>
 
         <div className="flex items-center gap-2 max-md:ml-5 lg:gap-6">
           <ChangeLanguage />
-          <Button className=""> Entrar em Contato </Button>
+          <Button className="text-xs md:text-base"> Entrar em Contato </Button>
         </div>
       </div>
     </div>
