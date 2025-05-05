@@ -3,6 +3,7 @@ import { Epilogue, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import I18nProvider from "@/components/I18nProvider";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -29,9 +30,11 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${epilogue.className} dark overflow-x-hidden antialiased`}
       >
+        <I18nProvider>
         <Header />
         {children}
         <Footer />
+        </I18nProvider>
       </body>
     </html>
   );

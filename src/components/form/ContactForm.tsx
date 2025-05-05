@@ -23,6 +23,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "../ui/textarea";
+import { useTranslation } from "react-i18next";
 
 const FormSchema = z.object({
   nome: z.string().min(3, {
@@ -43,6 +44,8 @@ const FormSchema = z.object({
 });
 
 export function ContactForm() {
+  const { t } = useTranslation();
+
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -91,9 +94,9 @@ export function ContactForm() {
             name="nome"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Nome Completo</FormLabel>
+                <FormLabel>{t("contact.form.name_label")}</FormLabel>
                 <FormControl>
-                  <Input placeholder="Seu nome completo" {...field} />
+                  <Input placeholder={`${t("contact.form.name_placeholder")}`} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -105,9 +108,13 @@ export function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Email</FormLabel>
+                <FormLabel>{t("contact.form.email_label")}</FormLabel>
                 <FormControl>
-                  <Input placeholder="seu@email.com" type="email" {...field} />
+                  <Input
+                    placeholder={`${t("contact.form.email_placeholder")}`}
+                    type="email"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -121,9 +128,9 @@ export function ContactForm() {
             name="whatsapp"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>WhatsApp</FormLabel>
+                <FormLabel>{t("contact.form.whatsapp_label")}</FormLabel>
                 <FormControl>
-                  <Input placeholder="(00) 00000-0000" {...field} />
+                  <Input placeholder={`${t("contact.form.whatsapp_placeholder")}`} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -135,19 +142,22 @@ export function ContactForm() {
             name="tipoProjeto"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Tipo de Projeto</FormLabel>
+                <FormLabel>{t("contact.form.project_type_label")}</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger className="!h-12 px-6">
-                      <SelectValue placeholder="Selecione o tipo do projeto" />
+                      <SelectValue placeholder={`${t("contact.form.project_type_placeholder")}`} />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    <SelectItem value="website">Website</SelectItem>
-                    <SelectItem value="ecommerce">E-commerce</SelectItem>
-                    <SelectItem value="aplicativo">Aplicativo</SelectItem>
-                    <SelectItem value="sistema">Sistema Web</SelectItem>
-                    <SelectItem value="outro">Outro</SelectItem>
+                    <SelectItem value="landing">
+                      {t("contact.form.project_type_landing")}
+                    </SelectItem>
+                    <SelectItem value="saas">
+                      {t("contact.form.project_type_saas")}
+                    </SelectItem>
+                    <SelectItem value="aplicativo">{t("contact.form.project_type_bot")}</SelectItem>
+                    <SelectItem value="outro">{t("contact.form.project_type_other")}</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />
@@ -161,10 +171,10 @@ export function ContactForm() {
           name="descricao"
           render={({ field }) => (
             <FormItem className="mt-6 md:mt-10">
-              <FormLabel>Descreva um pouco do que você precisa</FormLabel>
+              <FormLabel>{t("contact.form.message_label")}</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Descreva um pouco do que você precisa..."
+                  placeholder={`${t("contact.form.message_placeholder")}`}
                   className="min-h-[120px]"
                   {...field}
                 />
@@ -178,7 +188,7 @@ export function ContactForm() {
           type="submit"
           className="mt-6 w-full rounded-md px-6 py-4 text-base md:mt-10 md:w-auto md:self-end md:px-8 md:py-6 md:text-lg"
         >
-          Enviar Mensagem
+          {t("contact.form.submit")}
         </Button>
       </form>
     </Form>
