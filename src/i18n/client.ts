@@ -179,6 +179,7 @@ i18n.use(initReactI18next).init({
               title: "Landing Page",
               price: "800",
               desc: "Creation of a static landing page. With a fully customized design.",
+              link: "https://wa.link/u57xj8",
               items: [
                 {
                   name: "Creation of modern design",
@@ -210,6 +211,7 @@ i18n.use(initReactI18next).init({
               title: "Basic SaaS",
               price: "2,500",
               desc: "Creation of a system with a customized design already integrated with payment.",
+              link: "https://wa.link/qp3pg3",
               items: [
                 {
                   name: "Creation of modern design",
@@ -253,6 +255,7 @@ i18n.use(initReactI18next).init({
               title: "Chat BOT",
               price: "1,300",
               desc: "Creation of a bot to automatically respond to messages on WhatsApp.",
+              link: "https://wa.link/gsd0ty",
               items: [
                 {
                   name: "WhatsApp Integration",
@@ -482,6 +485,7 @@ i18n.use(initReactI18next).init({
               title: "Página de Aterrizaje",
               price: "800",
               desc: "Creación de una página de aterrizaje estática. Con diseño totalmente personalizado.",
+              link: "https://wa.link/u57xj8",
               items: [
                 {
                   name: "Creación de diseño moderno",
@@ -513,6 +517,7 @@ i18n.use(initReactI18next).init({
               title: "SaaS Básico",
               price: "2,500",
               desc: "Creación de un sistema con diseño personalizado ya integrado con pago.",
+              link: "https://wa.link/qp3pg3",
               items: [
                 {
                   name: "Creación de diseño moderno",
@@ -556,6 +561,7 @@ i18n.use(initReactI18next).init({
               title: "Chat BOT",
               price: "1,300",
               desc: "Creación de un bot para responder automáticamente los mensajes de WhatsApp.",
+              link: "https://wa.link/gsd0ty",
               items: [
                 {
                   name: "Integración WhatsApp",
@@ -778,6 +784,7 @@ i18n.use(initReactI18next).init({
               title: "Page de Destination",
               price: "800",
               desc: "Création d'une page de destination statique avec un design entièrement personnalisé.",
+              link: "https://wa.link/u57xj8",
               items: [
                 {
                   name: "Création de design moderne",
@@ -809,6 +816,7 @@ i18n.use(initReactI18next).init({
               title: "SaaS de base",
               price: "2,500",
               desc: "Création d'un système avec un design personnalisé déjà intégré au paiement.",
+              link: "https://wa.link/qp3pg3",
               items: [
                 {
                   name: "Création de design moderne",
@@ -852,6 +860,7 @@ i18n.use(initReactI18next).init({
               title: "Chat BOT",
               price: "1,300",
               desc: "Création d'un bot pour répondre automatiquement aux messages WhatsApp.",
+              link: "https://wa.link/gsd0ty",
               items: [
                 {
                   name: "Intégration WhatsApp",
@@ -1029,7 +1038,7 @@ i18n.use(initReactI18next).init({
           items: [
             {
               title: "Apex Studio",
-              subtile: "UI/UX Designer & Desenvolvedor FullStack",
+              subtitle: "UI/UX Designer & Desenvolvedor FullStack",
               date: "Fev 2025 - Mar 2025",
               description:
                 "Landing page desenvolvida para apresentar o jogo Apex Point, um simulador de corrida com foco em realismo e personalização. O projeto destaca os diferenciais do game com um layout moderno, escuro e dinâmico, otimizando a navegação tanto para desktop quanto mobile.",
@@ -1048,7 +1057,7 @@ i18n.use(initReactI18next).init({
             },
             {
               title: "DiacovMoney",
-              subtile: "UI/UX Designer & Desenvolvedor FrontEnd",
+              subtitle: "UI/UX Designer & Desenvolvedor FrontEnd",
               date: "Mar 2025 - Abr 2025",
               description:
                 "Página de captura criada para promover a mentoria financeira do Diacov, focada em ensinar como faturar R$ 5.000 mensais com produtos digitais no nicho HOT. A estrutura foi desenhada para conversão: carregamento rápido, copy direta e botão de ação sempre visível.",
@@ -1064,7 +1073,7 @@ i18n.use(initReactI18next).init({
             },
             {
               title: "Finance IA",
-              subtile: "Desenvolvedor FullStack",
+              subtitle: "Desenvolvedor FullStack",
               date: "Nov 2024 - Nov 2024",
               description:
                 "Aplicação SaaS criada para ajudar usuários a gerenciarem suas finanças de forma automatizada. Com autenticação de usuários, dashboard intuitivo para registrar gastos e uma IA integrada para gerar relatórios personalizados da saúde financeira do usuário, a plataforma também conta com sistema de planos pagos para liberar o acesso à IA. O projeto proporcionou aos usuários uma visualização clara e estratégica de suas finanças.",
@@ -1081,6 +1090,7 @@ i18n.use(initReactI18next).init({
               title: "Landing Page",
               price: "800",
               desc: "Criação de uma landing page estática. Com um design totalmente personalizado.",
+              link: "https://wa.link/u57xj8",
               items: [
                 {
                   name: "Criação do design moderno",
@@ -1112,6 +1122,7 @@ i18n.use(initReactI18next).init({
               title: "SaaS Básico",
               price: "2.500",
               desc: "Criação de um sistema com design personalizado já integrado com pagamento.",
+              link: "https://wa.link/qp3pg3",
               items: [
                 {
                   name: "Criação do design moderno",
@@ -1155,6 +1166,7 @@ i18n.use(initReactI18next).init({
               title: "BOT Chat",
               price: "1.300",
               desc: "Criação de um bot para responder automáticamente mensagens no Whatsapp.",
+              link: "https://wa.link/gsd0ty",
               items: [
                 {
                   name: "Integração com Whatsapp",

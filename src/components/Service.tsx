@@ -2,6 +2,8 @@
 
 import { ArrowRightIcon, CheckIcon, PlusIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 export interface ItemsProps {
   name: string;
@@ -15,6 +17,7 @@ const Service = ({ name2 }: { name2: string }) => {
     title: string;
     price: string;
     desc: string;
+    link: string;
     items: Array<ItemsProps>;
   };
 
@@ -41,8 +44,12 @@ const Service = ({ name2 }: { name2: string }) => {
       </div>
 
       <div className="mt-10 flex items-center justify-end gap-2 md:mt-20">
-        <p className="text-sm md:text-base">{t('services.footer')}</p>
-        <ArrowRightIcon size={20} />
+        <Button asChild variant={"ghost"}>
+          <Link href={service.link} target="_blank">
+            {t("services.footer")}
+            <ArrowRightIcon size={20} />
+          </Link>
+        </Button>
       </div>
     </div>
   );
