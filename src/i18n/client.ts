@@ -142,7 +142,7 @@ i18n.use(initReactI18next).init({
                 "i18n",
                 "Responsiveness",
               ],
-              link: "https://apex-studio-teste.vercel.app",
+              link: "https://apexstudio.fr/",
             },
             {
               title: "DiacovMoney",
@@ -161,13 +161,14 @@ i18n.use(initReactI18next).init({
               link: "https://diacovmoney.com",
             },
             {
-              title: "Finance IA",
-              subtitle: "FullStack Developer",
-              date: "Nov 2024 - Nov 2024",
+              title: "studAI",
+              subtitle: "UI/UX Designer & FullStack Developer",
+              date: "Jun 2025 - Present",
               description:
-                "SaaS application created to help users manage their finances automatically. With user authentication, an intuitive dashboard to track expenses, and an AI integrated to generate personalized financial health reports, the platform also includes a subscription-based system to unlock access to the AI. The project provided users with a clear and strategic view of their finances.",
-              technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "React", "Tailwind"],
-              link: "https://pvnfinanceai.vercel.app",
+                "System developed to create notes and simplify academic life, allowing the creation of subjects and tasks for each subject. I used React for the frontend and Python to build the API.",
+              technologies: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "React", "Tailwind", "Zustand", "Figma", "Python"],
+              link: "https://frontend-app-gubu.onrender.com",
+
             },
           ],
         },
@@ -448,7 +449,7 @@ i18n.use(initReactI18next).init({
                 "i18n",
                 "Responsividad",
               ],
-              link: "https://apex-studio-teste.vercel.app",
+              link: "https://apexstudio.fr/",
             },
             {
               title: "DiacovMoney",
@@ -467,13 +468,13 @@ i18n.use(initReactI18next).init({
               link: "https://diacovmoney.com",
             },
             {
-              title: "Finance IA",
-              subtitle: "Desarrollador FullStack",
-              date: "Nov 2024 - Nov 2024",
+              title: "studAI",
+              subtitle: "Diseñador UI/UX y Programador FullStack",
+              date: "Jun 2025 - Actualidad",
               description:
-                "Aplicación SaaS creada para ayudar a los usuarios a gestionar sus finanzas automáticamente. Con autenticación de usuarios, un panel intuitivo para seguir gastos, y una IA integrada para generar informes personalizados de salud financiera, la plataforma también incluye un sistema basado en suscripciones para desbloquear el acceso a la IA. El proyecto ofreció a los usuarios una visión clara y estratégica de sus finanzas.",
-              technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "React", "Tailwind"],
-              link: "https://pvnfinanceai.vercel.app",
+                "Sistema creado para tomar apuntes y facilitar la vida académica, permitiendo crear materias y tareas para cada materia. Utilicé React para el frontend y Python para crear la API.",
+              technologies: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "React", "Tailwind", "Zustand", "Figma", "Python"],
+              link: "https://frontend-app-gubu.onrender.com",
             },
           ],
         },
@@ -754,7 +755,7 @@ i18n.use(initReactI18next).init({
                 "i18n",
                 "Réactivité",
               ],
-              link: "https://apex-studio-teste.vercel.app",
+              link: "https://apexstudio.fr/",
             },
             {
               title: "DiacovMoney",
@@ -766,13 +767,13 @@ i18n.use(initReactI18next).init({
               link: "https://diacovmoney.com",
             },
             {
-              title: "Finance IA",
-              subtitle: "Développeur FullStack",
-              date: "Nov 2024 - Nov 2024",
+              title: "studAI",
+              subtitle: "Designer UI/UX & Développeur FullStack",
+              date: "Juin 2025 - Actuellement",
               description:
-                "Application SaaS créée pour aider les utilisateurs à gérer leurs finances de manière automatique. Avec l'authentification des utilisateurs, un tableau de bord intuitif pour suivre les dépenses et une IA intégrée pour générer des rapports financiers personnalisés, la plateforme comprend également un système d'abonnement pour débloquer l'accès à l'IA. Le projet a offert aux utilisateurs une vue claire et stratégique de leurs finances.",
-              technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "React", "Tailwind"],
-              link: "https://pvnfinanceai.vercel.app",
+                "Système conçu pour prendre des notes et faciliter la vie académique, permettant de créer des matières et des devoirs pour chaque matière. J’ai utilisé React pour le frontend et Python pour développer l’API.",
+              technologies: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "React", "Tailwind", "Zustand", "Figma", "Python"],
+              link: "https://frontend-app-gubu.onrender.com",
             },
           ],
         },
@@ -1038,7 +1039,7 @@ i18n.use(initReactI18next).init({
           items: [
             {
               title: "Apex Studio",
-              subtitle: "UI/UX Designer & Desenvolvedor FullStack",
+              subtitle: "Designer UI/UX & Desenvolvedor FullStack",
               date: "Fev 2025 - Mar 2025",
               description:
                 "Landing page desenvolvida para apresentar o jogo Apex Point, um simulador de corrida com foco em realismo e personalização. O projeto destaca os diferenciais do game com um layout moderno, escuro e dinâmico, otimizando a navegação tanto para desktop quanto mobile.",
@@ -1053,11 +1054,11 @@ i18n.use(initReactI18next).init({
                 "i18n",
                 "Responsividade",
               ],
-              link: "https://apex-studio-teste.vercel.app",
+              link: "https://apexstudio.fr/",
             },
             {
               title: "DiacovMoney",
-              subtitle: "UI/UX Designer & Desenvolvedor FrontEnd",
+              subtitle: "Designer UI/UX & Desenvolvedor FrontEnd",
               date: "Mar 2025 - Abr 2025",
               description:
                 "Página de captura criada para promover a mentoria financeira do Diacov, focada em ensinar como faturar R$ 5.000 mensais com produtos digitais no nicho HOT. A estrutura foi desenhada para conversão: carregamento rápido, copy direta e botão de ação sempre visível.",
@@ -1072,13 +1073,13 @@ i18n.use(initReactI18next).init({
               link: "https://diacovmoney.com",
             },
             {
-              title: "Finance IA",
-              subtitle: "Desenvolvedor FullStack",
-              date: "Nov 2024 - Nov 2024",
+              title: "studAI",
+              subtitle: "Designer UI/UX & Programador FullStack",
+              date: "Jun 2025 - Atualmente",
               description:
-                "Aplicação SaaS criada para ajudar usuários a gerenciarem suas finanças de forma automatizada. Com autenticação de usuários, dashboard intuitivo para registrar gastos e uma IA integrada para gerar relatórios personalizados da saúde financeira do usuário, a plataforma também conta com sistema de planos pagos para liberar o acesso à IA. O projeto proporcionou aos usuários uma visualização clara e estratégica de suas finanças.",
-              technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "React", "Tailwind"],
-              link: "https://pvnfinanceai.vercel.app",
+                "Sistema feito para criar anotacoes e facilitar a vida acadêmica, podendo criar matérias e tarefas para a materia. Utilizei React para o front e Python para criar a API.",
+              technologies: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "React", "Tailwind", "Zustand", "Figma", "Python"],
+              link: "https://frontend-app-gubu.onrender.com",
             },
           ],
         },

@@ -3,6 +3,7 @@
 import { GithubIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const About = () => {
   const { t } = useTranslation();
@@ -10,7 +11,9 @@ const About = () => {
   return (
     <section className="bg-background py-20 shadow-[0_0_100px_120px_rgba(9,5,26,1)] md:py-40">
       <div className="bg-card border-muted mx-auto flex h-auto w-[85%] flex-col rounded-md border p-6 md:h-120 md:flex-row">
-        <div className="bg-primary mb-6 h-40 w-full rounded-md md:mb-0 md:h-auto md:w-120 md:shrink-0"></div>{" "}
+        <div className=" mb-6 h-40 w-full rounded-md md:mb-0 md:h-auto md:w-120 md:shrink-0 relative">
+          <Image src={"/picture.jpeg"} alt={"Uma foto minha"} fill className="rounded-md object-cover object-center" />
+        </div>{" "}
         {/*  imagem */}
         <div className="mx-4 flex flex-col justify-between gap-6 md:mx-8">
           <div>
